@@ -55,7 +55,10 @@ export const useAuthStore = defineStore("auth", {
                     }
                 }
                 this.authStatus = 'Registration successful!';
-                data.reset();
+                data.name = '';
+                data.email = '';
+                data.password = '';
+                data.password_confirmation = '';
             }
         },
     },
